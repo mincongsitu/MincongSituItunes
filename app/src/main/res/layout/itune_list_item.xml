@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    android:backgroundTint="@color/turquoise"
+    android:layout_margin="8dp"
+    android:elevation="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- simple_list_item -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_collection_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_margin="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_collection_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Collection Name"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            app:layout_constraintTop_toTopOf="@id/iv_collection_photo"
+            app:layout_constraintStart_toEndOf="@id/iv_collection_photo"
+            app:layout_constraintBottom_toTopOf="@id/tv_artist"/>
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Artist Name"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_collection_photo"
+            app:layout_constraintStart_toEndOf="@id/iv_collection_photo"
+            app:layout_constraintTop_toBottomOf="@id/tv_artist"/>
+        <TextView
+            android:id="@+id/tv_track_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:layout_margin="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
